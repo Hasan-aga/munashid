@@ -4,7 +4,7 @@ import { connectToDatabase } from "@/db/db";
 
 export default async function handler(req, res) {
   try {
-    if (req.type === "POST") {
+    if (req.method === "POST") {
       let { db } = await connectToDatabase();
       console.log(req.body);
       let collection = db.collection("munashid");
