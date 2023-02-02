@@ -20,7 +20,7 @@ export default function Form({ setvideoVisible }) {
       text: data["نص المناشدة"],
     };
 
-    fetch("http://localhost:3000/api/nashid", {
+    fetch("/api/nashid", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
