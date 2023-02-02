@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import styles from "./form.module.css";
 
@@ -9,11 +9,27 @@ export default function Form({ setvideoVisible }) {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   function onSubmit(data) {
-    console.log(data);
     setvideoVisible(true);
+    const doc = {
+      name: data["الاسم بالخير"],
+      sex: data["الجنس"],
+      email: data["عنوان البريد الالكتروني"],
+      authority: data["الجهة المختصة"],
+      text: data["نص المناشدة"],
+    };
+
+    fetch("http://localhost:3000/api/nashid", {
+      method: "POST", // or 'PUT'
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(doc),
+    });
   }
-  console.log(errors);
+
+  errors && console.log(errors["الاسم بالخير"]);
 
   return (
     <form
@@ -24,7 +40,9 @@ export default function Form({ setvideoVisible }) {
     >
       <div className={`${styles.inputContainer} ${styles.ic1}`}>
         <input
-          className={styles.input}
+          className={`${styles.input} ${
+            errors["الاسم بالخير"] ? styles.warn : ""
+          }`}
           type="text"
           placeholder="الاسم بالخير"
           {...register("الاسم بالخير", { required: true, maxLength: 80 })}
@@ -32,7 +50,9 @@ export default function Form({ setvideoVisible }) {
       </div>
       <div className={`${styles.inputContainer} ${styles.ic2}`}>
         <input
-          className={styles.input}
+          className={`${styles.input} ${
+            errors["عنوان البريد الالكتروني"] ? styles.warn : ""
+          }`}
           type="text"
           placeholder="عنوان البريد الالكتروني"
           {...register("عنوان البريد الالكتروني", {
@@ -62,7 +82,6 @@ export default function Form({ setvideoVisible }) {
           </option>
           <option value=" القسم البلدي في محلتي"> القسم البلدي في محلتي</option>
           <option value=" الشركة العامة لتجارة الحبوب">
-            {" "}
             الشركة العامة لتجارة الحبوب
           </option>
         </select>
@@ -70,7 +89,9 @@ export default function Form({ setvideoVisible }) {
 
       <textarea
         style={{ height: "150px" }}
-        className={styles.input}
+        className={`${styles.input} ${
+          errors["نص المناشدة"] ? styles.warn : ""
+        }`}
         type="text"
         placeholder="نص المناشدة"
         {...register("نص المناشدة", { required: true, max: 500, min: 1 })}

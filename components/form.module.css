@@ -117,3 +117,7 @@
 .submit:active {
   background-color: #06b;
 }
+
+.warn {
+  outline: #dc2f55 2px solid;
+}
