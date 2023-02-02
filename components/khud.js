@@ -10,7 +10,7 @@ export default function Khud() {
       }}
     >
       <p style={{ padding: "5px" }}>تمت العملية بنجاح</p>
-      <video controls width="250" loop>
+      <video controls width="250" autoPlay loop>
         <source src="https://d95r5flyap9d6.cloudfront.net/khud.mp4" />
       </video>
     </div>
