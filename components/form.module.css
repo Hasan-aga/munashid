@@ -3,9 +3,8 @@
   border-radius: 20px;
   box-sizing: border-box;
   height: auto;
-  width: 21em;
+  width: 600px;
   padding: 40px;
-  z-index: 1111;
 }
 
 .title {
@@ -121,4 +120,11 @@
 
 .warn {
   outline: #dc2f55 2px solid;
+}
+/* Mobile and Tablet */
+@media (max-width: 1023px) {
+  .form {
+    width: 21em;
+    z-index: 1000;
+  }
 }
