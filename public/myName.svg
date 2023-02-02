@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="30.328878mm"
+   height="8.679266mm"
+   viewBox="0 0 30.328878 8.679266"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="myName.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5037598"
+     inkscape:cx="79.799979"
+     inkscape:cy="87.447477"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs2">
+    <rect
+       x="150.47968"
+       y="274.0094"
+       width="557.98608"
+       height="414.99918"
+       id="rect2871" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-38.258835,-73.591202)">
+    <rect
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.94315"
+       id="rect41147"
+       width="6.6049786"
+       height="8.679266"
+       x="38.258835"
+       y="73.591202" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     transform="translate(-38.258835,-73.591202)">
+    <text
+       xml:space="preserve"
+       id="text2869"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect2871);fill:#ffffff;fill-opacity:1;stroke:none"
+       transform="matrix(0.26458333,0,0,0.26458333,-1.4304811,-0.17489008)"><tspan
+         x="150.48047"
+         y="309.40039"
+         id="tspan843"><tspan
+           style="font-weight:bold;font-family:'MesloLGS NF';-inkscape-font-specification:'MesloLGS NF Bold'"
+           id="tspan841">H</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="44.294701"
+       y="81.925797"
+       id="text51861"><tspan
+         sodipodi:role="line"
+         id="tspan51859"
+         style="fill:#000000;stroke-width:0.264583"
+         x="44.294701"
+         y="81.925797">asan</tspan></text>
+  </g>
+</svg>

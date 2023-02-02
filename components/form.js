@@ -2,14 +2,17 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import styles from "./form.module.css";
 
-export default function Form() {
+export default function Form({ setvideoVisible }) {
   const {
     control,
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  function onSubmit(data) {
+    console.log(data);
+    setvideoVisible(true);
+  }
   console.log(errors);
 
   return (

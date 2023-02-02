@@ -3,10 +3,13 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "./page.module.css";
 import Form from "@/components/form";
+import { useState } from "react";
+import Khud from "@/components/khud";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [videoVisible, setvideoVisible] = useState(false);
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -18,8 +21,8 @@ export default function Home() {
           >
             By{" "}
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
+              src="/myName.svg"
+              alt="Logo"
               className={styles.vercelLogo}
               width={100}
               height={24}
@@ -31,7 +34,8 @@ export default function Home() {
       </div>
 
       <div className={styles.center}>
-        <Form />
+        {!videoVisible && <Form setvideoVisible={setvideoVisible} />}
+        {videoVisible && <Khud />}
       </div>
     </main>
   );
