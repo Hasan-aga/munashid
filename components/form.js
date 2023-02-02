@@ -66,8 +66,8 @@ export default function Form({ setvideoVisible }) {
           className={styles.input}
           {...register("الجنس", { required: true })}
         >
-          <option value="ذكر">ذكر</option>
           <option value=" انثى"> انثى</option>
+          <option value="ذكر">ذكر</option>
           <option value=" فرخ"> فرخ</option>
         </select>
       </div>

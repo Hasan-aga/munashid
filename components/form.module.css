@@ -5,6 +5,7 @@
   height: auto;
   width: 21em;
   padding: 40px;
+  z-index: 1111;
 }
 
 .title {
